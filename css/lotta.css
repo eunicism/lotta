@@ -1,0 +1,148 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+}
+
+*:after, *:before {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+}
+html, body {
+	font-size: 12px;
+	color: #888;
+	width: 100%;
+	height: 100%;
+}
+body {
+	font-family: "Time Roman","Palatino", serif;
+	background: #f1edec;
+	overflow-x: hidden;
+}
+a, a:link, a:hover, a:visited {
+	color: inherit;
+	text-decoration: none;
+}
+ul li {
+	list-style: none;
+}
+img {
+	width: 100%;
+}
+header, main, footer {
+	display: block;
+	float: left;
+	width: 100%;
+	clear: both;
+}
+.wrapper {
+	display: block;
+	float: none;
+	margin: auto;
+	width: 80%;
+	height: 100%;
+}
+.container {
+	display: block;
+	float: left;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	text-align: center;
+}
+.pre_header {
+	text-transform: uppercase;
+	padding: 5em 0;
+	line-height: 2em;
+	letter-spacing: .05em;
+}
+nav {
+	font-size: 200%; 
+	padding-bottom: 2em;
+}
+nav li {
+	display: inline-block;
+	text-transform: capitalize;
+	text-align: center;
+	padding: 0 1em;
+	letter-spacing: .05em;
+}
+.row_2 > div {
+	width: 50%;
+	display: inline-block;
+	float: left;
+}
+.row_2 > div:nth-child(odd) {
+	padding-right: 3em;
+}
+.row_2 > div:nth-child(even) {
+	padding-left: 3em;
+}
+div[class^="row_"] {
+	display: inline-block;
+	width: 100%;
+	padding: 3em 0;
+	clear: both;
+}
+figcaption {
+	display: inline-block;
+	float: left;
+	font-size: 85%;
+	font-family: "Arial", "Helvetica", sans-serif;
+	color: #777;
+	text-transform: capitalize;
+	padding-top: 1em;
+}
+
+figcaption:last-child {
+	font-family: "Time Roman","Palatino", serif;
+	float: right;
+	text-align: right;
+}
+.m_container, .f_container {
+	display: block;
+	width: 100%;
+	float: left;
+	background: #fff;
+}
+.main, .footer  {
+	display: block;
+	float: none;
+	margin: auto;
+	width: 80%;
+	text-align: center;
+}
+.footer {
+	padding: 2em;
+	margin-top: 3em;
+	border-top: 1px solid #ccc;
+}
+
+@media only screen and (max-width: 800px) {
+
+header, main, footer {
+	border: 4px solid red;
+}
+
+nav li {
+	display: block;
+	padding: 0.2em;
+}
+
+.row_2 > div {
+	width: 100%;
+	display: block;
+	float: left;
+	padding: 3em;
+}
+div[class^="row_"] {
+	display: block;
+	width: 100%;
+	padding: 3em 0;
+	clear: both;
+}
